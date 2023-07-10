@@ -243,11 +243,10 @@ export default class AutoTagNestedDirectories extends Plugin {
 
   async onload(): Promise<void> {
     await this.loadSettings();
-    const tagMap = await this.mapNestedTagsFromFilePaths();
+    // const tagMap = await this.mapNestedTagsFromFilePaths();
 
-    tagMap.forEach((entry) => {
-      this.writeNestedTagToFile(entry.tag, entry.tFile);
-    });
-
+    // tagMap.forEach((entry) => {
+    //   this.writeNestedTagToFile(entry.tag, entry.tFile);
+    // });
   }
 };
